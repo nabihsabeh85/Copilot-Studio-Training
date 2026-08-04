@@ -57,7 +57,7 @@ const m1ScreenshotSlots: ScreenshotSlot[] = [
   {
     id: 'm1-shot-1',
     caption:
-      'Capture the agent Overview page of a demo agent in the CDO Dev environment, with the test pane open on the right.',
+      'AI Enablement Assistant Overview in CDO - DEV, with instructions visible and the test pane open on the right.',
     annotation: 'Annotate: 1) left navigation, 2) instructions box, 3) test pane',
   },
 ]
@@ -82,8 +82,9 @@ const m2ScreenshotSlots: ScreenshotSlot[] = [
 const m3ScreenshotSlots: ScreenshotSlot[] = [
   {
     id: 'm3-shot-1',
-    caption: 'The Add knowledge dialog showing source options.',
-    annotation: 'Annotate: arrow to the citation with "always check the source"',
+    caption:
+      'The Add knowledge dialog for AI Enablement Assistant (CDO - DEV), showing upload, SharePoint, and featured source options.',
+    annotation: 'Annotate: highlight SharePoint / file upload as the everyday starting sources',
   },
   {
     id: 'm3-shot-2',
@@ -100,8 +101,8 @@ const m4ScreenshotSlots: ScreenshotSlot[] = [
   {
     id: 'm4-shot-1',
     caption:
-      'Capture the topic authoring canvas with a question node and condition branch visible.',
-    annotation: 'Annotate: label the trigger, question, and condition nodes',
+      'The Topics list for AI Enablement Assistant showing custom topics (Greeting, Goodbye) and system topics.',
+    annotation: 'Annotate: Custom vs System filters, and the Enabled toggles',
   },
 ]
 
@@ -126,8 +127,9 @@ const m6ScreenshotSlots: ScreenshotSlot[] = [
   {
     id: 'm6-shot-1',
     caption:
-      'Capture the Agents tab of a parent agent showing at least one child agent with its description.',
-    annotation: "Annotate: highlight the child agent's one-line job description",
+      'Child agent Details on the Agents tab — description is required before the agent can be saved.',
+    annotation:
+      'Annotate: the missing Description error — routing depends on a crisp one-line job description',
   },
 ]
 
@@ -138,13 +140,15 @@ const m6ScreenshotSlots: ScreenshotSlot[] = [
 const m7ScreenshotSlots: ScreenshotSlot[] = [
   {
     id: 'm7-shot-1',
-    caption: 'The Settings page with the Generative AI / orchestration section visible.',
-    annotation: 'Annotate: circle any "preview" or "experimental" tags, add "not for production"',
+    caption:
+      'Overview model picker for AI Enablement Assistant with Claude Sonnet 4.6 selected (CDO - DEV).',
+    annotation: 'Annotate: model choice sits next to instructions — this is the agent\'s brain',
   },
   {
     id: 'm7-shot-2',
-    caption: 'The model dropdown open, showing model tags.',
-    annotation: 'Annotate: circle any "preview" or "experimental" tags, add "not for production"',
+    caption:
+      'The model dropdown open, showing OpenAI / Anthropic options and Preview or Experimental tags.',
+    annotation: 'Annotate: circle Preview / Experimental tags — not for production',
   },
 ]
 
@@ -184,8 +188,9 @@ const m9ScreenshotSlots: ScreenshotSlot[] = [
 const m10ScreenshotSlots: ScreenshotSlot[] = [
   {
     id: 'm10-shot-1',
-    caption: 'The Channels page showing available channels.',
-    annotation: 'Annotate: "share this demo link for feedback before going live"',
+    caption:
+      'Channels page showing Demo website, Teams/M365, and other channel tiles (auth may limit web channels).',
+    annotation: 'Annotate: start with Demo website for stakeholder review before broad rollout',
   },
   {
     id: 'm10-shot-2',
