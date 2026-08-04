@@ -1,0 +1,24 @@
+<svg viewBox="0 0 640 240" role="img" aria-label="Diagram: an agent is made of knowledge, instructions, tools, and channels">
+        <!-- center agent -->
+        <rect x="250" y="85" width="140" height="70" rx="14" fill="#6B5BD2"/>
+        <text x="320" y="115" text-anchor="middle" class="stw">Your agent</text>
+        <text x="320" y="134" text-anchor="middle" font-family="Consolas" font-size="11" fill="#EEEBFA">answers + acts</text>
+        <!-- four inputs -->
+        <rect x="30" y="30" width="150" height="46" rx="10" fill="#fff" stroke="#0E8C86" stroke-width="2"/>
+        <text x="105" y="52" text-anchor="middle" class="st">Knowledge</text>
+        <text x="105" y="67" text-anchor="middle" class="stm">what it knows</text>
+        <rect x="30" y="164" width="150" height="46" rx="10" fill="#fff" stroke="#0E8C86" stroke-width="2"/>
+        <text x="105" y="186" text-anchor="middle" class="st">Instructions</text>
+        <text x="105" y="201" text-anchor="middle" class="stm">how it behaves</text>
+        <rect x="460" y="30" width="150" height="46" rx="10" fill="#fff" stroke="#0E8C86" stroke-width="2"/>
+        <text x="535" y="52" text-anchor="middle" class="st">Tools</text>
+        <text x="535" y="67" text-anchor="middle" class="stm">what it can do</text>
+        <rect x="460" y="164" width="150" height="46" rx="10" fill="#fff" stroke="#0E8C86" stroke-width="2"/>
+        <text x="535" y="186" text-anchor="middle" class="st">Channels</text>
+        <text x="535" y="201" text-anchor="middle" class="stm">where people use it</text>
+        <!-- connectors -->
+        <path d="M180 53 C 220 53 220 100 250 105" fill="none" stroke="#1E2447" stroke-width="2"/>
+        <path d="M180 187 C 220 187 220 140 250 135" fill="none" stroke="#1E2447" stroke-width="2"/>
+        <path d="M460 53 C 420 53 420 100 390 105" fill="none" stroke="#1E2447" stroke-width="2"/>
+        <path d="M460 187 C 420 187 420 140 390 135" fill="none" stroke="#1E2447" stroke-width="2"/>
+      </svg>

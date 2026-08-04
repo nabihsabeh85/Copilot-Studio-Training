@@ -1,0 +1,14 @@
+<svg viewBox="0 0 640 220" role="img" aria-label="Diagram: the evaluation loop of test set, run, results, fix, repeat">
+        <rect x="245" y="15" width="150" height="46" rx="10" fill="#fff" stroke="#0E8C86" stroke-width="2"/>
+        <text x="320" y="43" text-anchor="middle" class="st" font-weight="600">Build a test set</text>
+        <rect x="460" y="90" width="150" height="46" rx="10" fill="#fff" stroke="#0E8C86" stroke-width="2"/>
+        <text x="535" y="118" text-anchor="middle" class="st" font-weight="600">Run evaluation</text>
+        <rect x="245" y="162" width="150" height="46" rx="10" fill="#fff" stroke="#0E8C86" stroke-width="2"/>
+        <text x="320" y="190" text-anchor="middle" class="st" font-weight="600">Review results</text>
+        <rect x="30" y="90" width="150" height="46" rx="10" fill="#F2B33D"/>
+        <text x="105" y="118" text-anchor="middle" class="st" font-weight="600">Fix &amp; improve</text>
+        <path d="M395 45 C 490 55 520 65 535 82" fill="none" stroke="#1E2447" stroke-width="2"/><path d="M528 76 L537 84 L525 87" fill="none" stroke="#1E2447" stroke-width="2"/>
+        <path d="M535 136 C 520 158 440 175 400 182" fill="none" stroke="#1E2447" stroke-width="2"/><path d="M407 176 L397 183 L408 188" fill="none" stroke="#1E2447" stroke-width="2"/>
+        <path d="M245 185 C 150 175 120 160 105 142" fill="none" stroke="#1E2447" stroke-width="2"/><path d="M112 149 L103 140 L115 138" fill="none" stroke="#1E2447" stroke-width="2"/>
+        <path d="M105 90 C 120 62 200 48 240 41" fill="none" stroke="#1E2447" stroke-width="2"/><path d="M233 47 L243 40 L232 35" fill="none" stroke="#1E2447" stroke-width="2"/>
+      </svg>

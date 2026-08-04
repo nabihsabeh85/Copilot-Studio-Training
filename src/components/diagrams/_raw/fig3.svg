@@ -1,0 +1,19 @@
+<svg viewBox="0 0 640 210" role="img" aria-label="Diagram: knowledge sources feed the agent, which gives a cited answer">
+        <rect x="30" y="20" width="150" height="42" rx="10" fill="#fff" stroke="#0E8C86" stroke-width="2"/>
+        <text x="105" y="46" text-anchor="middle" class="st">SharePoint</text>
+        <rect x="30" y="84" width="150" height="42" rx="10" fill="#fff" stroke="#0E8C86" stroke-width="2"/>
+        <text x="105" y="110" text-anchor="middle" class="st">Files you upload</text>
+        <rect x="30" y="148" width="150" height="42" rx="10" fill="#fff" stroke="#0E8C86" stroke-width="2"/>
+        <text x="105" y="174" text-anchor="middle" class="st">Public websites</text>
+        <rect x="260" y="76" width="130" height="58" rx="12" fill="#6B5BD2"/>
+        <text x="325" y="110" text-anchor="middle" class="stw">Agent</text>
+        <rect x="450" y="66" width="160" height="78" rx="12" fill="#fff" stroke="#1E2447" stroke-width="2"/>
+        <text x="530" y="92" text-anchor="middle" class="st" font-weight="600">Answer</text>
+        <text x="530" y="112" text-anchor="middle" class="stm">grounded in sources,</text>
+        <text x="530" y="127" text-anchor="middle" class="stm">with a citation [1]</text>
+        <path d="M180 41 C 225 41 225 95 260 98" fill="none" stroke="#1E2447" stroke-width="2"/>
+        <path d="M180 105 L260 105" fill="none" stroke="#1E2447" stroke-width="2"/>
+        <path d="M180 169 C 225 169 225 115 260 112" fill="none" stroke="#1E2447" stroke-width="2"/>
+        <path d="M390 105 L442 105" stroke="#1E2447" stroke-width="2"/>
+        <path d="M436 99 L446 105 L436 111" fill="none" stroke="#1E2447" stroke-width="2"/>
+      </svg>

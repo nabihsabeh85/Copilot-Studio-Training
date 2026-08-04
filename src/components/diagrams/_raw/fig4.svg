@@ -1,0 +1,20 @@
+<svg viewBox="0 0 640 220" role="img" aria-label="Diagram: a topic flows from trigger to question to a condition with two branches">
+        <rect x="40" y="85" width="120" height="50" rx="10" fill="#0E8C86"/>
+        <text x="100" y="106" text-anchor="middle" class="stw">Trigger</text>
+        <text x="100" y="123" text-anchor="middle" font-family="Consolas" font-size="10.5" fill="#E3F3F2">"I need help"</text>
+        <rect x="215" y="85" width="120" height="50" rx="10" fill="#fff" stroke="#1E2447" stroke-width="2"/>
+        <text x="275" y="106" text-anchor="middle" class="st" font-weight="600">Question</text>
+        <text x="275" y="123" text-anchor="middle" class="stm">"Which system?"</text>
+        <path d="M390 110 L440 80 L490 110 L440 140 Z" fill="#F2B33D"/>
+        <text x="440" y="114" text-anchor="middle" class="st" font-weight="600" font-size="12">Condition</text>
+        <rect x="520" y="35" width="105" height="46" rx="10" fill="#fff" stroke="#6B5BD2" stroke-width="2"/>
+        <text x="572" y="55" text-anchor="middle" class="st" font-size="12.5">Answer from</text>
+        <text x="572" y="71" text-anchor="middle" class="st" font-size="12.5">knowledge</text>
+        <rect x="520" y="139" width="105" height="46" rx="10" fill="#fff" stroke="#6B5BD2" stroke-width="2"/>
+        <text x="572" y="159" text-anchor="middle" class="st" font-size="12.5">Escalate to</text>
+        <text x="572" y="175" text-anchor="middle" class="st" font-size="12.5">a person</text>
+        <path d="M160 110 L207 110" stroke="#1E2447" stroke-width="2"/><path d="M201 104 L211 110 L201 116" fill="none" stroke="#1E2447" stroke-width="2"/>
+        <path d="M335 110 L382 110" stroke="#1E2447" stroke-width="2"/><path d="M376 104 L386 110 L376 116" fill="none" stroke="#1E2447" stroke-width="2"/>
+        <path d="M470 92 C 495 75 495 60 512 58" fill="none" stroke="#1E2447" stroke-width="2"/>
+        <path d="M470 128 C 495 145 495 160 512 162" fill="none" stroke="#1E2447" stroke-width="2"/>
+      </svg>

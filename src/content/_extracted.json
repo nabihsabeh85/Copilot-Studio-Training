@@ -1,0 +1,400 @@
+{
+  "modules": [
+    {
+      "num": 1,
+      "title": "What is an agent?",
+      "why": "Everything in Copilot Studio makes sense once you can picture the four parts of an agent.",
+      "learn": [
+        "What an agent is, in plain language: knowledge + instructions + tools + channels",
+        "Conversational agents (people chat with them) vs autonomous agents (they act on triggers)",
+        "A tour of the maker portal: the Overview page, left navigation, and test pane",
+        "Licensing basics and Copilot Credits, awareness level only"
+      ],
+      "shotCount": 1,
+      "shotP": "Capture the agent Overview page of a demo agent in the CDO Dev environment, with the test pane open on the right.",
+      "shotCap": "Annotate: 1) left navigation, 2) instructions box, 3) test pane",
+      "tryIt": "Create your first agent by describing it in plain English. Ask it three questions in the test pane. That's it, you've built an agent.",
+      "links": [
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio",
+          "label": "What is Microsoft Copilot Studio?"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started",
+          "label": "Build an agent from the ground up"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview",
+          "label": "Use generative AI to build agents fast"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing-subscriptions",
+          "label": "Licensing and subscriptions"
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Pick the right environment",
+      "why": "The #1 beginner mistake is building in the wrong place. Learn this before you build anything you care about.",
+      "learn": [
+        "What an environment is: a container for agents, data, and permissions",
+        "Why you never build directly in Production",
+        "How to check and switch your environment in the portal (top-right picker)",
+        "What admins control per environment: data policies, and whether preview AI models are allowed"
+      ],
+      "shotCount": 1,
+      "shotP": "Capture the environment picker open, showing your Dev and Test environments in the list.",
+      "shotCap": "Annotate: circle the current environment name, add \"always check this first\"",
+      "tryIt": "Open the environment picker, say out loud which environment you're in, and switch to Dev if you're not already there.",
+      "links": [
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/environments-first-run-experience",
+          "label": "Work with environments"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-data-loss-prevention",
+          "label": "Data policies for agents"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing",
+          "label": "Licenses and access"
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Add knowledge",
+      "why": "Knowledge is what turns a generic chatbot into your expert. Answers come from your content, with citations.",
+      "learn": [
+        "How generative answers use knowledge sources",
+        "Source types: SharePoint, uploaded files, public websites, Dataverse",
+        "Writing a good description for each source, this is how the agent picks the right one",
+        "The \"use general knowledge\" toggle, and when to switch it off",
+        "Checking whether an answer actually came from your knowledge"
+      ],
+      "shotCount": 2,
+      "shotP": "1) The Add knowledge dialog showing source options. 2) A test-pane answer with a citation link visible.",
+      "shotCap": "Annotate: arrow to the citation with \"always check the source\"",
+      "tryIt": "Add one SharePoint site or file to your practice agent. Ask five questions and verify the citations point where you expect.",
+      "links": [
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio",
+          "label": "Knowledge sources overview"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint",
+          "label": "Add SharePoint"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-file-upload",
+          "label": "Upload a file"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-public-website",
+          "label": "Add a public website"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-test",
+          "label": "Test knowledge sources"
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Build topics",
+      "why": "When a conversation must follow a script, like collecting details for a request, topics give you full control.",
+      "learn": [
+        "What a topic is: a scripted conversation path with a trigger",
+        "Trigger phrases (classic) vs topic descriptions (generative orchestration)",
+        "The three everyday nodes: message, question, condition",
+        "Variables in plain terms: the agent remembering what the user told it",
+        "System topics like greeting, fallback, and escalate, and when to customize them"
+      ],
+      "shotCount": 1,
+      "shotP": "Capture the topic authoring canvas with a question node and condition branch visible.",
+      "shotCap": "Annotate: label the trigger, question, and condition nodes",
+      "tryIt": "Build one topic with a question and a two-way branch, for example: answer FAQs from knowledge, or offer to escalate.",
+      "links": [
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics",
+          "label": "Create and edit topics"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-authoring",
+          "label": "Create topics with Copilot"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers",
+          "label": "Topic triggers"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-variables",
+          "label": "Work with variables"
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Add tools",
+      "why": "Tools let your agent do things, not just talk: look up records, send emails, kick off approvals.",
+      "learn": [
+        "What a tool is: an action the agent can take on your behalf",
+        "Connectors: ready-made bridges to systems like Outlook, SharePoint, and Dataverse",
+        "Prompts as reusable AI instructions, and adding a prompt as a tool",
+        "Agent flows for multi-step automation, awareness level",
+        "Why the tool's description decides whether the agent picks it at the right moment"
+      ],
+      "shotCount": 1,
+      "shotP": "Capture the Add tool wizard with the description field filled in with a good example.",
+      "shotCap": "Annotate: highlight the description field, \"this is how the agent decides\"",
+      "tryIt": "Add one connector-based tool to your practice agent and trigger it from the test pane.",
+      "links": [
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-tools-custom-agent",
+          "label": "Add tools to custom agents"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-connectors",
+          "label": "Use connectors"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/draft-with-copilot",
+          "label": "Create prompts with Copilot"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-prompt-node",
+          "label": "Create a prompt as a tool"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flow-nl",
+          "label": "Build an agent flow with natural language"
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Work with multiple agents",
+      "why": "One giant do-everything agent gets messy. Specialists with clear jobs are easier to build, test, and trust.",
+      "learn": [
+        "Child agents: specialists that live inside your agent",
+        "Connecting to an existing Copilot Studio agent someone else built",
+        "Writing descriptions so the parent always routes to the right specialist",
+        "MCP servers, awareness level: a standard plug for external tools"
+      ],
+      "shotCount": 1,
+      "shotP": "Capture the Agents tab of a parent agent showing at least one child agent with its description.",
+      "shotCap": "Annotate: highlight the child agent's one-line job description",
+      "tryIt": "Add one child agent with a narrow job and a crisp description. Ask a question that should route to it and watch what happens.",
+      "links": [
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-add-other-agents",
+          "label": "Add other agents overview"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-child-agent",
+          "label": "Add a child agent"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-copilot-studio-agent",
+          "label": "Connect to an existing Copilot Studio agent"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp",
+          "label": "MCP in Copilot Studio"
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Settings, orchestration & models",
+      "why": "The Settings page is where the agent's \"brain\" is configured. Understand it so defaults are a choice, not an accident.",
+      "learn": [
+        "Generative orchestration vs classic orchestration, and what changes when you flip it",
+        "Agent instructions: the standing guidance your agent always follows",
+        "Picking a primary model from the dropdown: the trade-off is reasoning depth vs speed vs cost",
+        "Separate model settings for orchestration, generative responses, deep reasoning, and prompts",
+        "Preview and experimental model tags: fine to explore, never for production, and your admin controls whether they appear at all",
+        "Content moderation and the general-knowledge toggle",
+        "Authentication, awareness level: who is allowed to use the agent"
+      ],
+      "shotCount": 2,
+      "shotP": "1) The Settings page with the Generative AI / orchestration section visible. 2) The model dropdown open, showing model tags.",
+      "shotCap": "Annotate: circle any \"preview\" or \"experimental\" tags, add \"not for production\"",
+      "tryIt": "Open Settings on your practice agent. Write down (don't change) the current orchestration mode and model. That's your production-safe baseline.",
+      "links": [
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-generative-actions",
+          "label": "Orchestrate behavior with generative AI"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-select-agent-model",
+          "label": "Select a primary AI model"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-preview-model",
+          "label": "Preview models for generative responses"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompt-model-settings",
+          "label": "Prompt builder model settings"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication",
+          "label": "Configure end-user authentication"
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Test, activity & evaluation",
+      "why": "\"It seemed fine when I tried it\" is not testing. A repeatable test set is how you know the agent actually works.",
+      "learn": [
+        "Using the test pane, and tracking which topic is running",
+        "Reading the activity map: which knowledge, tools, and topics the agent picked and why",
+        "Creating a test set: real questions paired with expected answers",
+        "Choosing evaluation methods and reading the results",
+        "The improvement loop: fix descriptions and instructions, re-run, compare"
+      ],
+      "shotCount": 2,
+      "shotP": "1) The activity map expanded during a test. 2) An evaluation results page after a run.",
+      "shotCap": "Annotate: point to a failed case with \"this is gold, it tells you what to fix\"",
+      "tryIt": "Write a 10-question test set from real user questions, run an evaluation, and fix your worst-scoring answer.",
+      "links": [
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-test-bot",
+          "label": "Test your agent"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-create",
+          "label": "Create test sets"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview",
+          "label": "Choose evaluation methods"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-results",
+          "label": "Run tests and view results"
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Monitor & improve",
+      "why": "Publishing isn't the finish line. A 15-minute weekly review keeps a live agent healthy and improving.",
+      "learn": [
+        "Reading the analytics summary: sessions, engagement, resolution, escalation",
+        "Turning analytics into fixes for conversational agents",
+        "Autonomous agent health, where it applies",
+        "A simple weekly ritual: what to check, what \"bad\" looks like, who to tell"
+      ],
+      "shotCount": 1,
+      "shotP": "Capture the Analytics summary page of a live or demo agent.",
+      "shotCap": "Annotate: circle resolution rate and escalation rate",
+      "tryIt": "Open the analytics page of any live agent and name one thing you'd improve based on what you see.",
+      "links": [
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-summary",
+          "label": "Analytics summary"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-improve-agent-effectiveness",
+          "label": "Improve conversational agent effectiveness"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-improve-agent-health",
+          "label": "Analyze autonomous agent health"
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Channels & publishing",
+      "why": "Nothing is live until you press Publish. That's a feature: it means you decide exactly when users see changes.",
+      "learn": [
+        "The publish model: changes stay in draft until you publish, on purpose",
+        "Channels: demo website, live website, Teams and Microsoft 365",
+        "Using the demo website for stakeholder review before broad rollout",
+        "Teams and M365 deployment, including the admin approval step",
+        "Single sign-on, awareness level",
+        "The pre-publish checklist: knowledge verified, evaluation passed, right environment, right channel"
+      ],
+      "shotCount": 2,
+      "shotP": "1) The Channels page showing available channels. 2) The demo website open in a browser with the agent responding.",
+      "shotCap": "Annotate: \"share this demo link for feedback before going live\"",
+      "tryIt": "Publish your practice agent to the demo website and send the link to a classmate for feedback. Congratulations, you've shipped an agent.",
+      "links": [
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-fundamentals-publish-channels",
+          "label": "Publish and deploy key concepts"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-connect-bot-to-web-channels",
+          "label": "Publish to a live or demo website"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams",
+          "label": "Connect an agent to Teams and Microsoft 365"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/microsoft-365-copilot-extend-with-agents",
+          "label": "Extend Microsoft 365 Copilot with agents"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "k": "One agent, built progressively",
+      "p": "Every module adds a layer to the same practice agent. By Module 10 you've published something real."
+    },
+    {
+      "k": "Environments come first",
+      "p": "Always confirm you're in Dev before touching anything. It's the check that prevents the most painful mistakes."
+    },
+    {
+      "k": "Descriptions are a skill",
+      "p": "The agent routes by reading your descriptions of knowledge, tools, topics, and child agents. Write them like you mean it."
+    },
+    {
+      "k": "Nothing ships untested",
+      "p": "Evaluation before publishing, every time. A 10-question test set is the minimum bar."
+    },
+    {
+      "k": "Preview means not for production",
+      "p": "Preview and experimental features are for exploring. If it has a preview tag, it stays out of anything real."
+    },
+    {
+      "k": "Ask early, ask often",
+      "p": "Post questions in the shared FAQ. Your question improves the course for the next cohort."
+    }
+  ],
+  "keepLinks": [
+    {
+      "url": "https://aka.ms/agent-academy",
+      "label": "Copilot Studio Agent Academy",
+      "note": "free curated lessons from Microsoft"
+    },
+    {
+      "url": "https://aka.ms/nextAgIAD",
+      "label": "Agent in a Day",
+      "note": "free instructor-led workshop"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/training/browse/?terms=copilot%20studio&products=ms-copilot",
+      "label": "Microsoft Learn training modules",
+      "note": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/",
+      "label": "Implementation guidance",
+      "note": ""
+    },
+    {
+      "url": "https://adoption.microsoft.com/ai-agents/copilot-studio/#scenarios",
+      "label": "Scenario library",
+      "note": "downloadable example agents"
+    }
+  ]
+}

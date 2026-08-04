@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Agent Academy</title>
+    <script>
+      // Redirect deep links back through index.html while preserving the path.
+      sessionStorage.setItem(
+        'gh-pages-redirect',
+        location.pathname + location.search + location.hash,
+      )
+      location.replace('/Copilot-Studio-Training/')
+    </script>
+  </head>
+  <body></body>
+</html>

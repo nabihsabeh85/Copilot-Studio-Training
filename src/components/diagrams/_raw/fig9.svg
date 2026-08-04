@@ -1,0 +1,14 @@
+<svg viewBox="0 0 640 210" role="img" aria-label="Diagram: a simple analytics view showing sessions, resolution, and escalation">
+        <rect x="60" y="150" width="70" height="30" rx="6" fill="#0E8C86"/>
+        <rect x="150" y="110" width="70" height="70" rx="6" fill="#0E8C86"/>
+        <rect x="240" y="70" width="70" height="110" rx="6" fill="#0E8C86"/>
+        <rect x="330" y="90" width="70" height="90" rx="6" fill="#0E8C86" opacity="0.55"/>
+        <line x1="40" y1="180" x2="430" y2="180" stroke="#1E2447" stroke-width="2"/>
+        <text x="235" y="202" text-anchor="middle" class="stm">sessions per week</text>
+        <rect x="470" y="55" width="140" height="52" rx="10" fill="#fff" stroke="#0E8C86" stroke-width="2"/>
+        <text x="540" y="77" text-anchor="middle" class="st" font-weight="600">Resolved</text>
+        <text x="540" y="95" text-anchor="middle" class="stm">↑ good, keep going</text>
+        <rect x="470" y="123" width="140" height="52" rx="10" fill="#fff" stroke="#F2B33D" stroke-width="2.5"/>
+        <text x="540" y="145" text-anchor="middle" class="st" font-weight="600">Escalated</text>
+        <text x="540" y="163" text-anchor="middle" class="stm">↑ investigate why</text>
+      </svg>
