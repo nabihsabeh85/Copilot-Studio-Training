@@ -7,8 +7,15 @@ interface ScreenshotSlotProps {
   index: number
 }
 
+function screenshotUrl(moduleId: number, index: number): string {
+  const base = import.meta.env.BASE_URL.endsWith('/')
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`
+  return `${base}screenshots/${moduleId}-${index + 1}.png`
+}
+
 export function ScreenshotSlotCard({ moduleId, slot, index }: ScreenshotSlotProps) {
-  const src = `/screenshots/${moduleId}-${index + 1}.png`
+  const src = screenshotUrl(moduleId, index)
   const [hasImage, setHasImage] = useState<boolean | null>(null)
 
   useEffect(() => {
