@@ -33,31 +33,37 @@ export function ScreenshotSlotCard({ moduleId, slot, index }: ScreenshotSlotProp
     }
   }, [src])
 
+  // Loaded screenshot: clean figure only — no dashed "Screenshot slot" chrome
+  if (hasImage) {
+    return (
+      <figure className="overflow-hidden rounded-block border border-line bg-card">
+        <img src={src} alt={slot.caption} className="block w-full" />
+        <figcaption className="border-t border-line px-4 py-2.5 font-mono text-[12.5px] text-muted">
+          {slot.annotation}
+        </figcaption>
+      </figure>
+    )
+  }
+
+  // Missing image: keep facilitator placeholder with capture instructions
   return (
     <div className="rounded-block border-2 border-dashed border-violet bg-violet-soft p-5">
       <h3 className="mb-2 flex items-center gap-2 font-display text-sm font-bold uppercase tracking-wide text-violet">
         <CameraIcon />
         Screenshot slot
       </h3>
-      {hasImage ? (
-        <figure>
-          <img src={src} alt={slot.caption} className="w-full rounded-inner border border-line" />
-          <figcaption className="mt-2 font-mono text-[12.5px] text-violet">
-            {slot.annotation}
-          </figcaption>
-        </figure>
+      <p className="text-[14.5px]">{slot.caption}</p>
+      <p className="mt-2 font-mono text-[12.5px] text-violet">{slot.annotation}</p>
+      {hasImage === false ? (
+        <p className="mt-3 font-mono text-xs text-muted">
+          Image coming soon — drop{' '}
+          <code className="rounded bg-card px-1">
+            /public/screenshots/{moduleId}-{index + 1}.png
+          </code>{' '}
+          to replace this placeholder.
+        </p>
       ) : (
-        <>
-          <p className="text-[14.5px]">{slot.caption}</p>
-          <p className="mt-2 font-mono text-[12.5px] text-violet">{slot.annotation}</p>
-          <p className="mt-3 font-mono text-xs text-muted">
-            Image coming soon — drop{' '}
-            <code className="rounded bg-card px-1">
-              /public/screenshots/{moduleId}-{index + 1}.png
-            </code>{' '}
-            to replace this placeholder.
-          </p>
-        </>
+        <p className="mt-3 font-mono text-xs text-muted">Checking for screenshot…</p>
       )}
     </div>
   )
