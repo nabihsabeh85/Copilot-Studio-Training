@@ -20,7 +20,7 @@ export function LearnerProvider({ children }: { children: ReactNode }) {
   }, [])
 
   const setTheme = useCallback((value: ThemeMode) => {
-    setState((prev) => ({ ...prev, theme: value }))
+    setState((prev) => ({ ...prev, theme: value, themeChosen: true }))
   }, [])
 
   const updateModule = useCallback((moduleId: number, patch: Partial<ModuleProgress>) => {

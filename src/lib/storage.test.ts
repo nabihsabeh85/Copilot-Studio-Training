@@ -3,14 +3,33 @@ import { createDefaultState, loadState, migrateState, resetState, saveState } fr
 import { STORAGE_KEY } from '../content/types'
 
 describe('storage migration & reset', () => {
-  it('defaults theme to dark and persists light mode', () => {
+  it('defaults theme to dark and persists an explicit light choice', () => {
     const state = createDefaultState()
     expect(state.theme).toBe('dark')
+    expect(state.themeChosen).toBe(false)
     state.theme = 'light'
+    state.themeChosen = true
     saveState(state, localStorage)
     const loaded = loadState(localStorage)
     expect(loaded.theme).toBe('light')
+    expect(loaded.themeChosen).toBe(true)
     expect(document.documentElement.dataset.theme).toBe('light')
+  })
+
+  it('upgrades legacy light saves without themeChosen to dark', () => {
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({
+        version: 1,
+        freeRoam: false,
+        theme: 'light',
+        modules: {},
+      }),
+    )
+    const loaded = loadState(localStorage)
+    expect(loaded.theme).toBe('dark')
+    expect(loaded.themeChosen).toBe(false)
+    expect(document.documentElement.dataset.theme).toBe('dark')
   })
 
   it('preserves theme and free roam when resetting progress', () => {

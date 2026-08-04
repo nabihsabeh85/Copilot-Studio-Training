@@ -33,6 +33,7 @@ export function createDefaultState(): LearnerState {
     version: 1,
     freeRoam: false,
     theme: 'dark',
+    themeChosen: false,
     modules,
   }
 }
@@ -100,10 +101,16 @@ export function migrateState(raw: unknown): LearnerState {
       modules[key] = coerceModuleProgress(rawModules[key])
     }
 
+    // Dark is primary. Old saves with theme:"light" from the previous default
+    // are upgraded to dark unless the learner explicitly chose a theme.
+    const themeChosen = raw.themeChosen === true
+    const theme: ThemeMode = themeChosen ? coerceTheme(raw.theme) : 'dark'
+
     return {
       version: 1,
       freeRoam: Boolean(raw.freeRoam),
-      theme: coerceTheme(raw.theme),
+      theme,
+      themeChosen,
       modules,
       ...(typeof raw.migratedFrom === 'string' ? { migratedFrom: raw.migratedFrom } : {}),
       ...(typeof raw.notice === 'string' ? { notice: raw.notice } : {}),
@@ -142,6 +149,7 @@ export function saveState(state: LearnerState, storage: Storage = localStorage):
     version: 1,
     freeRoam: state.freeRoam,
     theme: state.theme,
+    themeChosen: state.themeChosen,
     modules: state.modules,
   }
   storage.setItem(STORAGE_KEY, JSON.stringify(toPersist))
@@ -153,6 +161,7 @@ export function resetState(storage: Storage = localStorage): LearnerState {
   const fresh = createDefaultState()
   // Keep appearance preferences when clearing course progress
   fresh.theme = previous.theme
+  fresh.themeChosen = previous.themeChosen
   fresh.freeRoam = previous.freeRoam
   saveState(fresh, storage)
   return fresh

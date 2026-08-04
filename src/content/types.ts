@@ -101,6 +101,8 @@ export interface LearnerState {
   version: 1
   freeRoam: boolean
   theme: ThemeMode
+  /** True only after the learner explicitly picks light/dark. */
+  themeChosen: boolean
   modules: Record<string, ModuleProgress>
   migratedFrom?: string
   notice?: string

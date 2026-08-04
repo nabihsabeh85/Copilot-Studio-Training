@@ -11,8 +11,12 @@
     <script>
       try {
         var raw = localStorage.getItem('agent-academy-v1')
-        var theme = raw ? JSON.parse(raw).theme : 'dark'
-        if (theme !== 'light') theme = 'dark'
+        var parsed = raw ? JSON.parse(raw) : null
+        // Dark is primary; only honor light if the learner explicitly chose it.
+        var theme = 'dark'
+        if (parsed && parsed.themeChosen === true && parsed.theme === 'light') {
+          theme = 'light'
+        }
         document.documentElement.dataset.theme = theme
         document.documentElement.style.colorScheme = theme
       } catch (e) {
