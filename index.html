@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
@@ -11,12 +11,13 @@
     <script>
       try {
         var raw = localStorage.getItem('agent-academy-v1')
-        var theme = raw ? JSON.parse(raw).theme : 'light'
-        if (theme !== 'dark') theme = 'light'
+        var theme = raw ? JSON.parse(raw).theme : 'dark'
+        if (theme !== 'light') theme = 'dark'
         document.documentElement.dataset.theme = theme
         document.documentElement.style.colorScheme = theme
       } catch (e) {
-        document.documentElement.dataset.theme = 'light'
+        document.documentElement.dataset.theme = 'dark'
+        document.documentElement.style.colorScheme = 'dark'
       }
     </script>
     <script>

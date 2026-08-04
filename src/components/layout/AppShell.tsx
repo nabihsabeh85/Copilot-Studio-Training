@@ -104,8 +104,8 @@ export function AppShell() {
               <span>
                 <span className="font-display font-semibold">Dark mode</span>
                 <span className="mt-1 block text-sm text-muted">
-                  Use a dark paper background. Your choice is saved with your progress in this
-                  browser.
+                  Dark is the default look. Turn this off for the light paper background. Your
+                  choice is saved in this browser.
                 </span>
               </span>
             </label>

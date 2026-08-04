@@ -2,7 +2,7 @@ import type { LearnerState, ModuleProgress, ThemeMode } from '../content/types'
 import { MODULE_COUNT, STORAGE_KEY } from '../content/types'
 
 function coerceTheme(raw: unknown): ThemeMode {
-  return raw === 'dark' ? 'dark' : 'light'
+  return raw === 'light' ? 'light' : 'dark'
 }
 
 /** Apply theme class/attribute for CSS variable overrides. */
@@ -32,7 +32,7 @@ export function createDefaultState(): LearnerState {
   return {
     version: 1,
     freeRoam: false,
-    theme: 'light',
+    theme: 'dark',
     modules,
   }
 }

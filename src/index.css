@@ -1,32 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-ink: #1e2447;
-  --color-paper: #fafbfd;
-  --color-card: #ffffff;
-  --color-teal: #0e8c86;
-  --color-teal-soft: #e3f3f2;
-  --color-violet: #6b5bd2;
-  --color-violet-soft: #eeebfa;
-  --color-sun: #f2b33d;
-  --color-sun-soft: #fcf3df;
-  --color-red: #c4453b;
-  --color-red-soft: #fbeae8;
-  --color-line: #d9dee9;
-  --color-muted: #5b6478;
-
-  --font-display: 'Bricolage Grotesque', 'Segoe UI', sans-serif;
-  --font-body: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
-  --font-mono: Consolas, 'SF Mono', ui-monospace, monospace;
-
-  --radius-card: 18px;
-  --radius-block: 14px;
-  --radius-inner: 12px;
-  --radius-pill: 999px;
-}
-
-/* Dark mode — same brand accents on a deep ink paper */
-html[data-theme='dark'] {
+  /* Dark is the primary palette */
   --color-ink: #e8eaf4;
   --color-paper: #12162b;
   --color-card: #1a1f38;
@@ -40,6 +15,32 @@ html[data-theme='dark'] {
   --color-red-soft: #3a1f1f;
   --color-line: #2e3555;
   --color-muted: #9aa3b8;
+
+  --font-display: 'Bricolage Grotesque', 'Segoe UI', sans-serif;
+  --font-body: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: Consolas, 'SF Mono', ui-monospace, monospace;
+
+  --radius-card: 18px;
+  --radius-block: 14px;
+  --radius-inner: 12px;
+  --radius-pill: 999px;
+}
+
+/* Light mode — original guide palette (opt-in) */
+html[data-theme='light'] {
+  --color-ink: #1e2447;
+  --color-paper: #fafbfd;
+  --color-card: #ffffff;
+  --color-teal: #0e8c86;
+  --color-teal-soft: #e3f3f2;
+  --color-violet: #6b5bd2;
+  --color-violet-soft: #eeebfa;
+  --color-sun: #f2b33d;
+  --color-sun-soft: #fcf3df;
+  --color-red: #c4453b;
+  --color-red-soft: #fbeae8;
+  --color-line: #d9dee9;
+  --color-muted: #5b6478;
 }
 
 @layer base {
