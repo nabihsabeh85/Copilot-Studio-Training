@@ -7,9 +7,11 @@ Progress, quiz scores, checklists, and notes persist in the browser under `local
 
 ## Live site (Azure)
 
-**https://jolly-smoke-0f957960f.7.azurestaticapps.net**
+**https://copilotstudio-academy.azurewebsites.net**
 
-Azure Static Web App: `copilotstudio-training` in resource group `rg-copilotstudio-training` (subscription: SalesGPT Demo). Deploys on every push to `main` via `.github/workflows/deploy-azure.yml`.
+Azure App Service Web App: `copilotstudio-academy` (Linux B1) in resource group `rg-copilotstudio-training` (subscription: SalesGPT Demo). Deploys on every push to `main` via `.github/workflows/deploy-appservice.yml`.
+
+Also available (older Static Web Apps Free hostname): https://jolly-smoke-0f957960f.7.azurestaticapps.net
 
 ## Live site (GitHub Pages)
 
