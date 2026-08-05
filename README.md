@@ -4,6 +4,13 @@ Interactive, self-paced training site that teaches non-technical business users 
 
 Progress, quiz scores, checklists, and notes persist in the browser under `localStorage` key `agent-academy-v1`. No backend or auth required — the static build runs fully offline after first load (fonts fall back to Segoe UI if Google Fonts is unavailable).
 
+
+## Live site (Azure)
+
+**https://jolly-smoke-0f957960f.7.azurestaticapps.net**
+
+Azure Static Web App: `copilotstudio-training` in resource group `rg-copilotstudio-training` (subscription: SalesGPT Demo). Deploys on every push to `main` via `.github/workflows/deploy-azure.yml`.
+
 ## Live site (GitHub Pages)
 
 **https://nabihsabeh85.github.io/Copilot-Studio-Training/**
